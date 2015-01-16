@@ -1,0 +1,73 @@
+/* using box model so that widths are actual */
+* {
+	box-sizing: border-box;
+}
+
+/* main stuff */
+body {
+	background-color: silver;
+	margin: 0px;
+	padding: 0px;
+}
+.container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+/* navigation */
+.horizontalLinks {
+	list-style-type: none;
+	overflow: hidden;
+	/*padding: 0;*/
+	background-color: peachpuff;
+	text-align: center;
+	padding: 20px;
+}
+.buttonLinks {
+	float: left;
+	padding: 10px 20px;
+	display: inline;
+	width: 20%;
+}
+.fitTheImage {
+	width: 100%;
+}
+.inlineCenter {
+	text-align: center;
+}
+.galleryImage {
+	display: inline;
+}
+
+/* responsive stuff */
+@media screen and (max-width: 825px) {
+	.inlineCenter {
+		width: 390px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media screen and (max-width: 700px) {
+	.container {
+		width: 100%;
+	}
+	.buttonLinks {
+		float: none;
+		background-color: peachpuff;
+		display: inline-block;
+		width: 100%;
+		border-top: 1px solid silver;
+	}
+	.horizontalLinks {
+		background-color: transparent;
+		margin: 0;
+		padding: 20px 0px;
+	}
+}
+@media screen and (max-width: 425px) {
+	.inlineCenter {
+		width: 190px;
+	}
+}
